@@ -1,13 +1,19 @@
 body,html {
   padding: 0;
   margin: 0;
+  min-width: 310px;
+  height: 100%;
+  width: 100%;
 }
 a:hover , a {
   color: inherit;
   text-decoration: inherit;
 }
 .active {
-  color: #acf1bd;
+  color: #acf1bd !important;
+}
+.right-border {
+  border-right: 1px solid black;
 }
 .max-width {
   max-width: 900px;
@@ -16,9 +22,10 @@ a:hover , a {
   width: 100%;
   background-color: white;
 }
-.gray {
+.grey {
   width: 100%;
   background-color: #eaeef0;
+  color:#003449;
 }
 .title {
   background-color: #acf1bd;
@@ -37,7 +44,7 @@ a:hover , a {
   color: #acf1bd;
   background-color: #003449;
   padding: 3px;
-  vertical-align: middle;
+  font-size: 25px;
 }
 .small-menu {
   background-color: #003449;
@@ -46,7 +53,6 @@ a:hover , a {
   display: none;
 }
 .contacts {
-
   color: #003449;
   .fas {
     color: #003449;
@@ -54,7 +60,7 @@ a:hover , a {
     line-height: 100px;
   }
   .contacts__row {
-    height: 100px;
+    min-height: 100px;
   }
   .contacts__info {
     background-color: #d5eef1;
@@ -74,4 +80,64 @@ a:hover , a {
   height: 35px;
   line-height: 35px;
   text-transform: uppercase;
+}
+//end of header
+//body start
+.label {
+  font-weight: bold;
+  font-size:20px;
+  padding-left: 15px;
+}
+.worktime {
+  list-style: none;
+  padding: 15px;
+  li {
+    white-space: nowrap;
+  }
+}
+.contact-white-button {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+  font-size: 20px;
+  height: 60px;
+  line-height: 60px;
+  color: #003449;
+  width:100%;
+  padding: 0;
+}
+.contact-white-button:hover {
+  background-color: #acf1bd;
+}
+.popup-content {
+  text-align: center;
+  font-weight: bold;
+}
+
+.gm-style-iw {
+  overflow: visible !important;
+
+  div {
+    overflow: visible !important;
+  }
+}
+.gm-style-iw {
+  background: #acf1bd;
+}
+.gm-style-iw {
+
+  // Стрелочка
+  &::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border: 22px solid transparent;
+    border-top-color: #acf1bd;
+    z-index: 4;
+    position: absolute;
+    left: 40%;
+    top: auto;
+    bottom: -53px;
+    margin: auto;
+  }
 }

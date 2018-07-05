@@ -82,7 +82,155 @@
     </div>
 </div>
 <div class="grey">
+    <div class="container-fluid max-width white">
+    <div class="row">
+    <div class="col-12 col-sm-7 right-border">
+        <span class="label">Услуги:</span>
+        <div class="row">
+            <div class="col-6">
+                <ul class="services">
+                    <li>анализы</li>
+                    <li>узи</li>
+                    <li>экг</li>
+                    <li>анализы</li>
+                    <li>узи</li>
+                    <li>экг</li>
+                    <li>анализы</li>
+                    <li>узи</li>
+                    <li>экг</li>
+                </ul>
+            </div>
+            <div class="col-6">
+                <ul class="services">
+                    <li>анализы</li>
+                    <li>узи</li>
+                    <li>экг</li>
+                    <li>анализы</li>
+                    <li>узи</li>
+                    <li>экг</li>
+                    <li>анализы</li>
+                    <li>узи</li>
+                    <li>экг</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <div class="col-12 col-sm-5" style="padding: 0">
+            <span class="label">Часы работы:</span>
+            <div class="row">
+                <div class="col-6">
+                <ul class="worktime">
+                    <li>Понедельник</li>
+                    <li>Вторник</li>
+                    <li>Среда</li>
+                    <li>Четверг</li>
+                    <li>Пятница</li>
+                    <li>Суббота</li>
+                    <li>Воскресенье</li>
+                </ul>
+                </div>
+                <div class="col-6">
+                <ul class="worktime">
+                    <li>8:30 – 18:30</li>
+                    <li>8:30 – 18:30</li>
+                    <li>8:30 – 18:30</li>
+                    <li>8:30 – 18:30</li>
+                    <li>8:30 – 18:30</li>
+                    <li>8:30 – 18:30</li>
+                    <li>8:30 – 18:30</li>
+                </ul>
+                </div>
 
+            </div>
+            <a href="contacts.html">
+                <div class="d-none d-sm-block contact-white-button">
+                    <i class="far fa-edit"></i>
+                    Записаться на прием
+                </div>
+            </a>
+        </div>
+    </div>
+
+<div class="row">
+    <div id="googleMap" style="width:100%;height:300px;"></div>
+    <script>
+        function myMap() {
+            var coordinates = {lat: 59.904097, lng: 29.089236},
+
+                map = new google.maps.Map(document.getElementById('googleMap'), {
+                    center: coordinates,
+                    zoom: 16,
+                    disableDefaultUI: true,
+                    scrollwheel: true,
+                    styles: [
+                        {
+                            "featureType": "administrative",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "color": "#167eab"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "poi",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "color": "#167eab"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                                {
+                                    "color": "#76f8c4"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "color": "#22a8e1"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "water",
+                            "stylers": [
+                                {
+                                    "color": "#7dccee"
+                                }
+                            ]
+                        }
+                    ]
+
+                });
+            marker = new google.maps.Marker({
+                position: coordinates,
+                map: map,
+                icon: 'img/marker.png',
+                animation: google.maps.Animation.DROP
+
+            });
+
+            infowindow.open(map,marker);
+            marker.addListener('click', function() {
+                infowindow.open(map, marker);
+            });
+
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3jYPBaoGFRTWgAwmm0UZ51BP3HMuM4y8&callback=myMap"></script>
+</div>
+
+
+
+    </div>
 </div>
 </body>
 </html>
