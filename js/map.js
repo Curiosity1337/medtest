@@ -3,7 +3,7 @@ function myMap() {
 
         map = new google.maps.Map(document.getElementById('googleMap'), {
             center: coordinates,
-            zoom: 16,
+            zoom: 17,
             disableDefaultUI: true,
             scrollwheel: true,
             styles: [
@@ -60,11 +60,6 @@ function myMap() {
         icon: 'img/marker.png',
         animation: google.maps.Animation.DROP
 
-    });
-
-    infowindow.open(map,marker);
-    marker.addListener('click', function() {
-        infowindow.open(map, marker);
     });
 
 }
