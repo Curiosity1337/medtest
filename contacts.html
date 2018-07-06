@@ -39,9 +39,9 @@
                 </svg>
                 Меню</div>
             <div class="col-3 d-sm-none small-menu"><a href="index.html">Главная</a></div>
-            <div class="col-3 d-sm-none small-menu active">О нас</div>
+            <div class="col-3 d-sm-none small-menu"><a href="about.html">О нас</a></div>
             <div class="col-3 d-sm-none small-menu"><a href="price.html">Услуги</a></div>
-            <div class="col-3 d-sm-none small-menu"><a href="contacts.html">Контакты</a></div>
+            <div class="col-3 d-sm-none small-menu active">Контакты</div>
             <div class="contacts col-12 col-sm-8">
                 <div class="row contacts__row">
                     <div class="contacts__info col-12 col-sm-6">
@@ -84,7 +84,7 @@
 <div class="grey">
     <div class="container-fluid max-width white">
         <div class="row">
-            <div class="col-12 col-sm-8 right-border">
+            <div class="col-12 col-sm-8">
                 <span class="label">Запись на прием</span>
                 <br>
                 <br>
@@ -96,13 +96,13 @@
                 <p>
                     <form action="./callback.php" method="post">
                     <input type="text" class="form-input" name="name" placeholder="Имя" required>
-                    <input type="number" class="form-input" name="phone" placeholder="phone" required>
+                    <input type="number" class="form-input" name="phone" placeholder="Телефон" required>
                 <textarea class="form-input comment" name="comment" placeholder="Комментарий"></textarea>
                 <input type="submit" value="Отправить" class="submit-button">
             </form>
                 </p>
             </div>
-            <div class="col-12 col-sm-4" style="padding: 0">
+            <div class="col-12 col-sm-4  left-border" style="padding: 0;">
                 <span class="label">Часы работы:</span>
                 <div class="row">
                     <div class="col-5">
@@ -129,12 +129,6 @@
                     </div>
 
                 </div>
-                <a href="contacts.html">
-                    <div class="d-none d-sm-block contact-white-button">
-                        <i class="far fa-edit"></i>
-                        Записаться на прием
-                    </div>
-                </a>
                 <div id="googleMap" style="width:100%;height:250px;"></div>
                 <script src="js/map.js"></script>
                 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3jYPBaoGFRTWgAwmm0UZ51BP3HMuM4y8&callback=myMap"></script>
@@ -156,9 +150,7 @@
                 <div class="footer-border col-12 col-sm-3 none-border">
                     +7 (931) 225-36-10
                 </div>
-                <div class="footer-button col-12 col-sm-4" onclick="location.href = 'contacts.html';">
-                    <i class="far fa-edit"></i>
-                    Записаться на прием
+                <div class="footer-block col-12 col-sm-4">
                 </div>
             </div>
             <br>
