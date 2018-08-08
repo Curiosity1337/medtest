@@ -25,7 +25,7 @@
         <div class="row">
             <div class="title col-12 col-md-4">
                 <div class="row">
-                    <div class="col-6 offset-1">
+                    <div class="col-8">
                         <span class="name">
                     <br>
                     Центр <br>медицинских<br> анализов
@@ -33,7 +33,7 @@
 
                 </span>
                     </div>
-                    <div class="col-5 logo">
+                    <div class="col-4 logo">
                         <img src="img/blood.png" width="90" height="90" align="right">
                     </div>
                 </div>
@@ -99,37 +99,18 @@
             <div class="col-12 col-md-8">
                 <div class="row">
                     <div class="col-12"> Лицензия выдана Комитетом по Здравоохранению Ленинградской области от 11.05.2012
-                        Нажмите,чтобы увеличить <br></div>
-                    <div class="modal fade" id="image-modal" tabindex="-1" role="dialog">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-
-                                </div>
-                                <div class="modal-body">
-                                    <img class="img-responsive center-block" src="" alt="">
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-                                </div>
-                            </div>
-                        </div>
+                        <br>
+                        Нажмите,чтобы увеличить
+                        <br>
                     </div>
                             <div class="col-12 col-lg-4 text-center">
-                                <a href="#" class="thumbnail">
-                                    <img src="img/license1.jpg" width="200" height="283" alt="...">
-                                </a>
+                                    <img class='image' src="img/license1.jpg" width="200" height="283" alt="...">
                             </div>
                             <div class="col-12 col-lg-4 text-center">
-                                <a href="#" class="thumbnail">
-                                    <img src="img/license2.jpg" width="200" height="283" alt="...">
-                                </a>
+                                    <img class='image' src="img/license2.jpg" width="200" height="283" alt="...">
                             </div>
                             <div class="col-12 col-lg-4 text-center">
-                                <a href="#" class="thumbnail">
-                                    <img src="img/license3.jpg" width="200" height="283" alt="...">
-                                </a>
+                                    <img class='image' src="img/license3.jpg" width="200" height="283" alt="...">
                             </div>
 
                 </div>
@@ -212,23 +193,19 @@
     </div>
 </div>
 <script>
-    // После загрузки DOM-дерева (страницы)
-    $(function() {
-        //при нажатии на ссылку, содержащую Thumbnail
-        $('a.thumbnail').click(function(e) {
-            //отменить стандартное действие браузера
-            e.preventDefault();
-            //присвоить атрибуту scr элемента img модального окна
-            //значение атрибута scr изображения, которое обёрнуто
-            //вокруг элемента a, на который нажал пользователь
-            $('#image-modal .modal-body img').attr('src', $(this).find('img').attr('src'));
-            //открыть модальное окно
-            $("#image-modal").modal('show');
-        });
-        //при нажатию на изображение внутри модального окна
-        //закрыть его
-        $('#image-modal .modal-body img').on('click', function() {
-            $("#image-modal").modal('hide')
+    $(".image").click(function(){	// Событие клика на маленькое изображение
+        var img = $(this);	// Получаем изображение, на которое кликнули
+        var src = img.attr('src'); // Достаем из этого изображения путь до картинки
+        $("body").append("<div class='popup'>"+ //Добавляем в тело документа разметку всплывающего окна
+            "<div class='popup_bg'></div>"+ // Блок, который будет служить фоном затемненным
+            "<img src='"+src+"' class='popup_img' />"+ // Само увеличенное фото
+            "</div>");
+        $(".popup").fadeIn(200); // Медленно выводим изображение
+        $(".popup_bg").click(function(){	// Событие клика на затемненный фон
+            $(".popup").fadeOut(200);	// Медленно убираем всплывающее окн
+            setTimeout(function() {	// Выставляем таймер
+                $(".popup").remove(); // Удаляем разметку всплывающего окна
+            }, 200);
         });
     });
 </script>
