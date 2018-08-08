@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="837765c6-80b1-4e4d-85fb-340e362c38b0" name="Default" comment="">
+    <list default="true" id="837765c6-80b1-4e4d-85fb-340e362c38b0" name="Default" comment="favicon">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about.html" afterPath="$PROJECT_DIR$/about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contacts.html" afterPath="$PROJECT_DIR$/contacts.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/license.html" afterPath="$PROJECT_DIR$/license.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/price.html" afterPath="$PROJECT_DIR$/price.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vacancies.html" afterPath="$PROJECT_DIR$/vacancies.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -91,7 +86,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="price.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="price.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/price.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="500">
@@ -121,12 +116,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vacancies.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="vacancies.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vacancies.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="48" lean-forward="false" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
-              <folding />
+            <state relative-caret-position="633">
+              <caret line="179" column="73" lean-forward="false" selection-start-line="179" selection-start-column="73" selection-end-line="179" selection-end-column="73" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -194,8 +191,8 @@
         <option value="$PROJECT_DIR$/about.html" />
         <option value="$PROJECT_DIR$/contacts.html" />
         <option value="$PROJECT_DIR$/license.html" />
-        <option value="$PROJECT_DIR$/vacancies.html" />
         <option value="$PROJECT_DIR$/price.html" />
+        <option value="$PROJECT_DIR$/vacancies.html" />
       </list>
     </option>
   </component>
@@ -466,7 +463,7 @@
       <workItem from="1532257327185" duration="2090000" />
       <workItem from="1532465295562" duration="1091000" />
       <workItem from="1532466497488" duration="607000" />
-      <workItem from="1533717303031" duration="13264000" />
+      <workItem from="1533717303031" duration="15220000" />
     </task>
     <task id="LOCAL-00001" summary="header is done">
       <created>1530790993938</created>
@@ -573,11 +570,18 @@
       <option name="project" value="LOCAL" />
       <updated>1533736100202</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="favicon">
+      <created>1533738826510</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1533738826510</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67966000" />
+    <option name="totallyTimeSpent" value="69922000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -645,7 +649,8 @@
     <MESSAGE value="little" />
     <MESSAGE value="little table" />
     <MESSAGE value="vacancies, licenses" />
-    <option name="LAST_COMMIT_MESSAGE" value="vacancies, licenses" />
+    <MESSAGE value="favicon" />
+    <option name="LAST_COMMIT_MESSAGE" value="favicon" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="VssConfiguration">
@@ -979,19 +984,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vacancies.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="48" lean-forward="false" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/price.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
           <caret line="127" column="28" lean-forward="false" selection-start-line="127" selection-start-column="28" selection-end-line="127" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vacancies.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="179" column="73" lean-forward="false" selection-start-line="179" selection-start-column="73" selection-end-line="179" selection-end-column="73" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
